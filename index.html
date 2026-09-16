@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Image Gallery</title>
+
+  <!-- Link to external stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Font for a clean, modern look -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===================== HEADER / NAVIGATION ===================== -->
+  <header class="site-header">
+    <div class="header-content">
+      <h1 class="site-title">My Image Gallery</h1>
+      <p class="site-subtitle">A curated collection of beautiful moments from around the world</p>
+    </div>
+
+    <!-- Category filter buttons -->
+    <nav class="filter-nav" aria-label="Gallery category filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="nature">Nature</button>
+      <button class="filter-btn" data-filter="animals">Animals</button>
+      <button class="filter-btn" data-filter="travel">Travel</button>
+      <button class="filter-btn" data-filter="architecture">Architecture</button>
+    </nav>
+  </header>
+
+  <!-- ===================== MAIN GALLERY ===================== -->
+  <main>
+    <section class="gallery" id="gallery" aria-label="Image gallery">
+
+      <!-- Each figure = one gallery item. data-category is used for filtering -->
+      <figure class="gallery-item" data-category="nature">
+        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80"
+             alt="Green forest with sunlight streaming through the trees" loading="lazy" />
+        <figcaption class="item-overlay">
+          <span class="item-title">Forest Sunlight</span>
+          <span class="item-category">Nature</span>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item" data-category="nature">
+        <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80"
+             alt="Mountain range reflected in a calm lake" loading="lazy" />
+        <figcaption class="item-overlay">
+          <span class="item-title">Mountain Lake</span>
+          <span class="item-category">Nature</span>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item" data-category="nature">
+        <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=800&q=80"
+             alt="Wide green valley with rolling hills" loading="lazy" />
+        <figcaption class="item-overlay">
+          <span class="item-title">Green Valley</span>
+          <span class="item-category">Nature</span>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item" data-category="animals">
+        <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&fit=crop&w=800&q=80"
+             alt="Close-up portrait of a red fox" loading="lazy" />
+        <figcaption class="item-overlay">
+          <span class="item-title">Red Fox</span>
+          <span class="item-category">Animals</span>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item" data-category="animals">
+        <img src="https://images.unsplash.com/photo-1465101162946-4377e57745c3?auto=format&fit=crop&w=800&q=80"
+             alt="A majestic lion resting in the grass" loading="lazy" />
+        <figcaption class="item-overlay">
+          <span class="item-title">Resting Lion</span>
+          <span class="item-category">Animals</span>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item" data-category="animals">
+        <img src="https://images.unsplash.com/photo-1425082661705-1834bfd09dca?auto=format&fit=crop&w=800&q=80"
+             alt="A curious owl perched on a branch" loading="lazy" />
+        <figcaption class="item-overlay">
+          <span class="item-title">Curious Owl</span>
+          <span class="item-category">Animals</span>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item" data-category="travel">
+        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80"
+             alt="Traveler looking at a scenic city skyline" loading="lazy" />
+        <figcaption class="item-overlay">
+          <span class="item-title">City Skyline</span>
+          <span class="item-category">Travel</span>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item" data-category="travel">
+        <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=800&q=80"
+             alt="Old town street with colorful buildings" loading="lazy" />
+        <figcaption class="item-overlay">
+          <span class="item-title">Colorful Old Town</span>
+          <span class="item-category">Travel</span>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item" data-category="travel">
+        <img src="https://images.unsplash.com/photo-1500835556837-99ac94a94552?auto=format&fit=crop&w=800&q=80"
+             alt="Tropical beach with clear turquoise water" loading="lazy" />
+        <figcaption class="item-overlay">
+          <span class="item-title">Tropical Beach</span>
+          <span class="item-category">Travel</span>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item" data-category="architecture">
+        <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=800&q=80"
+             alt="Modern glass skyscraper against a blue sky" loading="lazy" />
+        <figcaption class="item-overlay">
+          <span class="item-title">Modern Skyscraper</span>
+          <span class="item-category">Architecture</span>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item" data-category="architecture">
+        <img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=800&q=80"
+             alt="Historic cathedral with intricate stone details" loading="lazy" />
+        <figcaption class="item-overlay">
+          <span class="item-title">Historic Cathedral</span>
+          <span class="item-category">Architecture</span>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item" data-category="architecture">
+        <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=800&q=80"
+             alt="Spiral staircase inside a modern building" loading="lazy" />
+        <figcaption class="item-overlay">
+          <span class="item-title">Spiral Staircase</span>
+          <span class="item-category">Architecture</span>
+        </figcaption>
+      </figure>
+
+    </section>
+  </main>
+
+  <!-- ===================== LIGHTBOX / MODAL ===================== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Image preview">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close preview">&times;</button>
+
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image">&#10094;</button>
+
+    <div class="lightbox-content">
+      <img src="" alt="" id="lightboxImage" class="lightbox-image" />
+      <p class="lightbox-title" id="lightboxTitle"></p>
+    </div>
+
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image">&#10095;</button>
+  </div>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <p>&copy; 2026 My Image Gallery. Built with HTML, CSS &amp; JavaScript.</p>
+    <p class="footer-note">Images courtesy of Unsplash photographers.</p>
+  </footer>
+
+  <!-- Link to external JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
